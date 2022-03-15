@@ -1,2 +1,10 @@
+if(Get-Module -ListAvailable -Name Terminal-Icons)
+{
+    Import-Module -Name Terminal-Icons
+}
+else{
+    Install-Module -Name Terminal-Icons -Repository PSGallery
+}
+
 Import-Module -Name Terminal-Icons
--my-posh --init --shell pwsh --config C:\Users\BenBu\AppData\Local\Programs\oh-my-posh\themes\custom.omp.json | Invoke-Expression
+oh-my-posh --init --shell pwsh --config https://raw.githubusercontent.com/BenBurge/DevelopmentTools/main/custom.omp.json | Invoke-Expression
