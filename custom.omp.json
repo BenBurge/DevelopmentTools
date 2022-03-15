@@ -24,7 +24,7 @@
             "apikey": "ff917602df5904420df05681055414a6",
             "location": "Stansbury Park,UT",
             "units": "imperial",
-            "http_timeout": 500,
+            "http_timeout": 160,
             "cache_timeout": 30,
             "template": "{{.Weather}} ({{.Temperature}}{{.UnitIcclearon}})"
           },
