@@ -2,37 +2,43 @@
   "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
   "blocks": [
     {
-      "alignment": "right",
-      "newline": true,
+      "alignment": "left",
+      "newLine": true,
       "segments": [
         {
           "background": "#29315A",
           "foreground": "#47dbe6",
-          "leading_diamond": "\ue0b6",
+          "leading_diamond": " \ue0b6",
           "properties": {
             "precision": 2,
-            "template": " \uf85a {{ round .PhysicalPercentUsed .Precision }}% "
+            "template": " Mem. {{ round .PhysicalPercentUsed .Precision }}% "
           },
           "style": "diamond",
-          "trailing_diamond": "\ue0b4 ",
+          "trailing_diamond": "\ue0b0",
           "type": "sysinfo"
         },
         {
           "background": "#29315A",
           "foreground": "#e6e347",
-          "leading_diamond": "\ue0b6",
+          "powerline_symbol": "\ue0b0",
           "properties": {
             "apikey": "ff917602df5904420df05681055414a6",
             "location": "Stansbury Park,UT,US",
             "units": "imperial",
             "http_timeout": 200,
             "cache_timeout": 30,
-            "template": "{{.Weather}} ({{.Temperature}}{{.UnitIcon}})"
+            "template": " {{.Weather}} ({{.Temperature}}{{.UnitIcon}}) "
           },
-          "style": "diamond",
-          "trailing_diamond": "\ue0b4  \u23fd  ",
+          "style": "powerline",
           "type": "owm"
-        },
+        }
+      ],
+      "type": "prompt"
+    },
+    {
+      "alignment": "right",
+      "newline": false,
+      "segments": [
         {
           "background": "#29315A",
           "foreground": "#3EC669",
@@ -54,16 +60,16 @@
             "{{ if gt .Ahead 0 }}#B388FF{{ end }}",
             "{{ if gt .Behind 0 }}#B388FF{{ end }}"
           ],
-          "leading_diamond": "\ue0b6",
+          "leading_diamond": "\ue0b2",
           "properties": {
             "branch_max_length": 25,
             "fetch_stash_count": true,
             "fetch_status": true,
-            "fetch_upstream_icon": true,
+            "fetch_upstream_icon": false,
             "template": " {{ .HEAD }}{{ .BranchStatus }}{{ if .Working.Changed }} \uf044 {{ .Working.String }}{{ end }}{{ if and (.Working.Changed) (.Staging.Changed) }} |{{ end }}{{ if .Staging.Changed }} \uf046 {{ .Staging.String }}{{ end }}{{ if gt .StashCount 0 }} \uf692 {{ .StashCount }}{{ end }} "
           },
           "style": "diamond",
-          "trailing_diamond": "\ue0b4 ",
+          "trailing_diamond": "\ue0b0",
           "type": "git"
         }
       ],
@@ -74,27 +80,11 @@
       "newline": true,
       "segments": [
         {
-          "background": "#29315A",
-          "foreground": "#AEA4BF",
-          "leading_diamond": "\ue0b6",
-          "properties": {
-            "style": "austin",
-            "template": "{{ .FormattedMs }}",
-            "threshold": 150
-          },
-          "style": "diamond",
-          "trailing_diamond": "\ue0b4 ",
-          "type": "executiontime"
-        },
-        {
-          "background": "#29315A",
           "foreground": "#7FD5EA",
-          "leading_diamond": "\ue0b6",
           "properties": {
-            "template": "\u276f"
+            "template": "\n \u276f"
           },
           "style": "diamond",
-          "trailing_diamond": "\ue0b4 ",
           "type": "text"
         }
       ],
