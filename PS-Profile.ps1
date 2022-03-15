@@ -1,3 +1,5 @@
+Clear-Host
+
 if(Get-Module -ListAvailable -Name Terminal-Icons)
 {
     Import-Module -Name Terminal-Icons
