@@ -26,7 +26,7 @@
             "units": "imperial",
             "http_timeout": 160,
             "cache_timeout": 30,
-            "template": "{{.Weather}} ({{.Temperature}}{{.UnitIcclearon}})"
+            "template": "{{.Weather}} ({{.Temperature}}{{.UnitIcon}})"
           },
           "style": "diamond",
           "trailing_diamond": "\ue0b4 ",
