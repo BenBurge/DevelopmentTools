@@ -7,7 +7,7 @@
         {
           "background": "#29315A",
           "foreground": "#E64747",
-          "leading_diamond": " \ue0b6",
+          "leading_diamond": "\ue0b6",
           "properties": {
             "precision": 2,
             "template": " \uf85a {{ round .PhysicalPercentUsed .Precision }}% "
@@ -19,7 +19,7 @@
         {
           "background": "#29315A",
           "foreground": "#E64747",
-          "leading_diamond": " \ue0b6",
+          "leading_diamond": "\ue0b6",
           "properties": {
             "apikey": "ff917602df5904420df05681055414a6",
             "location": "Stansbury Park,UT",
@@ -41,7 +41,7 @@
             "template": "\ue5ff {{ .Path }}"
           },
           "style": "diamond",
-          "trailing_diamond": "\ue0b4",
+          "trailing_diamond": "\ue0b4 ",
           "type": "path"
         },
         {
@@ -62,7 +62,7 @@
             "template": " {{ .HEAD }}{{ .BranchStatus }}{{ if .Working.Changed }} \uf044 {{ .Working.String }}{{ end }}{{ if and (.Working.Changed) (.Staging.Changed) }} |{{ end }}{{ if .Staging.Changed }} \uf046 {{ .Staging.String }}{{ end }}{{ if gt .StashCount 0 }} \uf692 {{ .StashCount }}{{ end }} "
           },
           "style": "diamond",
-          "trailing_diamond": "\ue0b4",
+          "trailing_diamond": "\ue0b4 ",
           "type": "git"
         }
       ],
@@ -93,7 +93,7 @@
             "template": "\u276f"
           },
           "style": "diamond",
-          "trailing_diamond": "\ue0b4",
+          "trailing_diamond": "\ue0b4 ",
           "type": "text"
         }
       ],
