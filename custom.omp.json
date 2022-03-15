@@ -3,10 +3,11 @@
   "blocks": [
     {
       "alignment": "right",
+      "newline": true,
       "segments": [
         {
           "background": "#29315A",
-          "foreground": "#E64747",
+          "foreground": "#47dbe6",
           "leading_diamond": "\ue0b6",
           "properties": {
             "precision": 2,
@@ -18,7 +19,7 @@
         },
         {
           "background": "#29315A",
-          "foreground": "#e6db47",
+          "foreground": "#e6e347",
           "leading_diamond": "\ue0b6",
           "properties": {
             "apikey": "ff917602df5904420df05681055414a6",
@@ -29,7 +30,7 @@
             "template": "{{.Weather}} ({{.Temperature}}{{.UnitIcon}})"
           },
           "style": "diamond",
-          "trailing_diamond": "\ue0b4 ",
+          "trailing_diamond": "\ue0b4  \u23fd  ",
           "type": "owm"
         },
         {
@@ -53,7 +54,7 @@
             "{{ if gt .Ahead 0 }}#B388FF{{ end }}",
             "{{ if gt .Behind 0 }}#B388FF{{ end }}"
           ],
-          "leading_diamond": " \ue0b6",
+          "leading_diamond": "\ue0b6",
           "properties": {
             "branch_max_length": 25,
             "fetch_stash_count": true,
