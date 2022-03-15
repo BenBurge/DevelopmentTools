@@ -9,11 +9,16 @@
           "foreground": "#E64747",
           "leading_diamond": "\ue0b6",
           "properties": {
-            "template": "{{ .UserName }}"
+            "apikey": "ff917602df5904420df05681055414a6",
+            "location": "Stansbury Park,UT",
+            "units": "imperial",
+            "http_timeout": 150,
+            "cache_timeout": 10,
+            "template": "{{.Weather}} ({{.Temperature}}{{.UnitIcon}})"
           },
           "style": "diamond",
           "trailing_diamond": "\ue0b4 ",
-          "type": "session"
+          "type": "owm"
         },
         {
           "background": "#29315A",
@@ -41,30 +46,6 @@
         },
         {
           "background": "#29315A",
-          "foreground": "#E4F34A",
-          "leading_diamond": " \ue0b6",
-          "properties": {
-            "fetch_version": false,
-            "template": "\ue235{{ if .Error }}{{ .Error }}{{ else }}{{ if .Venv }}{{ .Venv }} {{ end }}{{ .Full }}{{ end }}"
-          },
-          "style": "diamond",
-          "trailing_diamond": "\ue0b4",
-          "type": "python"
-        },
-        {
-          "background": "#29315A",
-          "foreground": "#7FD5EA",
-          "leading_diamond": " \ue0b6",
-          "properties": {
-            "fetch_version": false,
-            "template": "\ufcd1{{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }}"
-          },
-          "style": "diamond",
-          "trailing_diamond": "\ue0b4",
-          "type": "go"
-        },
-        {
-          "background": "#29315A",
           "foreground": "#42E66C",
           "leading_diamond": " \ue0b6",
           "properties": {
@@ -74,42 +55,6 @@
           "style": "diamond",
           "trailing_diamond": "\ue0b4",
           "type": "node"
-        },
-        {
-          "background": "#29315A",
-          "foreground": "#E64747",
-          "leading_diamond": " \ue0b6",
-          "properties": {
-            "fetch_version": false,
-            "template": "\ue791{{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }}"
-          },
-          "style": "diamond",
-          "trailing_diamond": "\ue0b4",
-          "type": "ruby"
-        },
-        {
-          "background": "#29315A",
-          "foreground": "#E64747",
-          "leading_diamond": " \ue0b6",
-          "properties": {
-            "fetch_version": false,
-            "template": "\ue738{{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }}"
-          },
-          "style": "diamond",
-          "trailing_diamond": "\ue0b4",
-          "type": "java"
-        },
-        {
-          "background": "#29315A",
-          "foreground": "#9B6BDF",
-          "leading_diamond": " \ue0b6",
-          "properties": {
-            "fetch_version": false,
-            "template": "\ue624{{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }} "
-          },
-          "style": "diamond",
-          "trailing_diamond": "\ue0b4",
-          "type": "julia"
         },
         {
           "background": "#29315A",
